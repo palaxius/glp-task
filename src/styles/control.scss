@@ -1,0 +1,35 @@
+.controls {
+  padding: 25px 0 35px 0;
+}
+
+.control {
+  padding-bottom: 12px;
+
+  &__name {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  &-btn {
+    padding: 17px 22px;
+    background: #fff;
+    border: 1px solid #595959;
+    border-radius: 13px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #595959;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    user-select: none;
+  }
+}
+
+.active {
+  background: #4CAF50 !important;
+  color: #fff !important;
+  border: 1px solid #4CAF50 !important;
+}

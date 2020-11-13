@@ -1,0 +1,145 @@
+.navbar__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #383A45;
+  padding: 12px 20px;
+
+  &-menu {
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  &-logo {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  &-title {
+    font-size: 36px;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  &-btn {
+    background: #F7EB70;
+    border-radius: 44px;
+    padding: 10px 40px 10px 17px;
+    color: #000;
+    font-size: 16px;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 11px;
+      height: 6px;
+      right: 17px;
+      top: 17px;
+      background-image: url('../assets/dropdown.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &-left {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navbar__side {
+  background: #383A45;
+  width: 60px;
+
+  &-settings {
+    padding: 13px 14px;
+    cursor: pointer;
+  }
+}
+
+.settings-active {
+  background: #41434A;
+  border-left: 6px solid #F7EB70;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.content {
+  width: 100%;
+
+  &__header {
+    background: #F9F8E5;
+    padding: 18px 0 18px 42px;
+    border-bottom: 1px solid #E2E2E2;
+  }
+
+  &-title {
+    font-weight: bold;
+  }
+}
+
+.main {
+  padding: 23px 0 40px 40px;
+}
+
+.categories {
+  &__list {
+    display: flex;
+    width: 941px;
+    border-bottom: 1px solid #E2E2E2;
+
+    &-item {
+      font-size: 16px;
+      color: #595959;
+      padding: 16px 22px;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        background: #EAEAEA;
+        color: #2196F3;
+      }
+    }
+  }
+}
+
+.categoryActive {
+  background: #EAEAEA;
+  color: #2196F3;
+}
+
+.tables {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E2E2E2;
+  display: inline-grid;
+}
+
+.button {
+  margin-top: 40px;
+}
+
+.button-save {
+  background: #F7EB70;
+  padding: 15px 20px;
+  border-radius: 44px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background: #e5d306;
+
+  }
+}
